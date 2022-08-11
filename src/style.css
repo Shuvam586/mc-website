@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: repeat(11, 9%);
+    grid-template-rows: repeat(10, 10%);
+
+}
+
+.core,
+.content,
+.dark,
+.calendar {
+    scale: 0.8;
+    grid-row: 4;
+    margin-top: 30%;
+    margin-left: -15%;
+    transition: ease-in-out 0.15s;
+}
+
+.calendar {
+    grid-column: 5;
+}
+
+.dark {
+    grid-column: 6;
+}
+
+.content {
+    grid-column: 7;
+}
+
+.core {
+    grid-column: 8;
+}
+
+#club-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 1000;
+    text-align: center;
+    font-size: 12vh;
+    grid-column: 4/9;
+    grid-row: 5/6;
+}
+
+#school-name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5vh;
+    grid-column: 5/8;
+    text-align: center;
+    grid-row: 7/8;
+    margin-top: -8%;
+}
+
+.core:hover,
+.calendar:hover,
+.content:hover,
+.dark:hover {
+    outline: none;
+    scale: 1.2;
+}
+
+.events-page {
+    background-color: #CACACA;
+}
+
+.about-us {
+    background-color: #9A9A9A;
+}
+
+.core-committee {
+    background-color: #545454;
+}
