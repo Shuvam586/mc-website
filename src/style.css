@@ -89,6 +89,14 @@ section {
     background-color: #545454;
 }
 
+.content-team {
+    background-color: #202020;
+}
+
+.footer {
+    background-color: #0E0E0E;
+    height: 30vh;
+}
 
 .about-us {
     display: flex;
@@ -115,4 +123,19 @@ section {
     width: 40vw;
     text-align: center;
     margin-inline: auto;
+}
+
+#core-committee-title {
+    font-size: 7vh;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #E8E8E8;
+}
+
+#core-committee-tagline {
+    color: #D8D3D3;
+    font-size: 2.5vh;
+    font-weight: 700;
+    text-align: center;
 }
