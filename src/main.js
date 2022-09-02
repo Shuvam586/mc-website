@@ -40,4 +40,14 @@ intro.addEventListener('scroll',()=> {
 
     
 })*/
+var club_title = document.getElementById('club-title')
 
+var maths_title = new Typed('#club-title', {
+    strings: ["Maths Club","DPSRPK"],
+    loop : true,
+    startDelay : 500,
+    typeSpeed: 200,
+    backDelay : 700,
+    backSpeed : 150,
+    showCursor : false
+});

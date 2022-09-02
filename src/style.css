@@ -139,3 +139,7 @@ section {
     font-weight: 700;
     text-align: center;
 }
+
+#club-title-items { 
+    display: none;
+}
