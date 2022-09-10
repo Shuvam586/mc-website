@@ -123,3 +123,20 @@ document.getElementById('container').addEventListener('scroll', function (){
     document.getElementById('container').style.backgroundColor = 'rgb(' + final + ', ' + final + ', ' + final + ')';
     document.getElementById('container').style.color = 'rgb(' + fg + ', ' + fg + ', ' + fg + ')';
 });
+
+//Code for dark mode :-
+function switchTheme() {
+    val = document.documentElement.getAttribute('data-theme');
+
+    if (val == 'dark') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        
+        document.getElementById('container').style.backgroundColor = 'rgb(255, 255, 255)';
+        document.getElementById('container').style.color = 'rgb(0, 0, 0)';
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        
+        document.getElementById('container').style.backgroundColor = 'rgb(0, 0, 0)';
+        document.getElementById('container').style.color = 'rgb(255, 255, 255)';
+    }
+}
