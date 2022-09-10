@@ -11,11 +11,14 @@
 /*For variable colors (Just for the SVGs)*/
 html[data-theme='dark'] {
     --color1: rgb(255, 255, 255);
+    --color2: rgb(0, 0, 0);
 }
 
-html[data-theme='dark'] {
-    --color1: rgb(255, 255, 255);
+html[data-theme='light'] {
+    --color1: rgb(0, 0, 0);
+    --color2: rgb(255, 255, 255);
 }
+
 
 .path {
     fill: var(--color1);
@@ -280,3 +283,111 @@ a:hover {
     align-items: center;
     justify-content: center;
 }
+
+.content-team {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#content-title {
+    font-size: 7vh;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#content-tagline {
+    /* color: #232323; */
+    font-size: 2.5vh;
+    font-weight: 700;
+    text-align: center;
+}
+
+#content-content {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content-content img {
+    border-radius: 2rem;
+    width: 60vw;
+}
+
+/* footer */
+.footer {
+    margin-bottom: 2rem;
+    padding-inline: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-logo img {
+    height: 20vh;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-names {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-club-name {
+    font-weight: 600;
+    font-size: 3em;
+}
+
+.footer-school-name {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-tagline {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: right;
+    font-size: 2em;
+}
+
+.footer-icons * {
+    padding-inline: 1rem;
+}
+
+.footer-icons *:last-of-type { padding-right: 0; }
+
+.footer-icons svg {
+    scale: 0.1;
+}
+
+.footer-icons svg .path{
+    fill: var(--color1);
+}
+
+.fa-house, .fa-youtube, .fa-instagram {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.fa-house:hover {color: #868686;}
+.fa-youtube:hover {color: #EC7262;}
+.fa-instagram:hover {color: #c787e2;}
