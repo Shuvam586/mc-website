@@ -1,84 +1,26 @@
-const event_page = document.getElementById('event-page')
-const core_committee = document.getElementById('core-page')
-const dark_page = document.getElementById('about-us-dark')
-const content_page = document.getElementById('content-team-page')
-function pagescroll(variable) {
-    switch (variable) {
-        case 'events':
-            console.log('event')
-            event_page.scrollIntoView({
-                behavior: 'smooth'
-            })
-            break
-        case 'core':
-            core_committee.scrollIntoView({
-                behavior: 'smooth'
-            })
-            break
-        case 'dark':
-            dark_page.scrollIntoView({
-                behavior: 'smooth'
-            })
-            break
-        case 'content':
-            content_page.scrollIntoView({
-                behavior: 'smooth'
-            })
-            break
-    }
-}
+// typing ghapla 
 
-const intro = document.getElementById('main-page')
-/*let wantedY = 0;
-intro.addEventListener('scroll',()=> { 
-    wantedY = window.scrollY
-    if (wantedY == 25*window.innerHeight) { 
-        event_page.scrollIntoView({
-            behavior : 'smooth'
-        })
-    }
-
-    
-})*/
-var club_title = document.getElementById('club-title')
-
-
-// events page carousel
-
-const slider = document.querySelector('.events-gallery');
-let isDown = false;
-let startX;
-let scrollLeft;
-
-slider.addEventListener('mousedown', e => {
-  isDown = true;
-  slider.classList.add('active');
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-});
-slider.addEventListener('mouseleave', _ => {
-  isDown = false;
-  slider.classList.remove('active');
-});
-slider.addEventListener('mouseup', _ => {
-  isDown = false;
-  slider.classList.remove('active');
-});
-slider.addEventListener('mousemove', e => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const SCROLL_SPEED = 3;
-  const walk = (x - startX) * SCROLL_SPEED;
-  slider.scrollLeft = scrollLeft - walk;
+ityped.init('#club-tagline', {
+    strings:['Learn.', 'Lark.', 'Luminate.'],
+    startDelay: 500,
+    loop: true,
+    typeSpeed:  60,
+    cursorChar: ""
 });
 
-var maths_title = new Typed('#club-title', {
-    strings: ["Maths Club","DPSRPK"],
-    loop : true,
-    startDelay : 500,
-    typeSpeed: 200,
-    backDelay : 700,
-    backSpeed : 150,
-    showCursor : false
+
+// carousel ghapla
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 60,
+    autoplay: 1000,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
 });

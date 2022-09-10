@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./assets/mc icon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    
     <script src="https://developers.google.com/speed/libraries/devguide#jquery"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="main.js" defer></script>
+    <script src="https://unpkg.com/ityped@1.0.3/dist/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <title>Maths Club | DPSRPK</title>
 </head>
 
@@ -38,6 +44,7 @@
 
         <span id="club-title">Maths Club</span>
         <p id="school-name">DPSRPK</p>
+        <p id="club-tagline"></p>
     </section>
 
     <section id="event-page" class="events-page">
@@ -45,18 +52,34 @@
             <p id="events-title">Our Events</p>
             <p id="events-tagline">all in one place, just for you</p>
         </div>
-        <ul class="events-gallery">
-            <li class="events-gallery-item" id="gallery-item-1">
-                <div class="gallery-item-image"><img src="./assets/carousel-images/logique 1.jpeg" alt="logique"></div>
-                <div class="gallery-item-title"><p>Logique '22</p></div>
-                <div class="gallery-item-tagline">Celebrate the philosophy of logic through math, tech vis-à-vis juxta!
-                    Third time's a charm, we shall prove thee!</div>
-            </li>
-            <li class="events-gallery-item" id="gallery-item-2"></li>
-            <li class="events-gallery-item" id="gallery-item-3"></li>
-            <li class="events-gallery-item" id="gallery-item-4"></li>
-            <li class="events-gallery-item" id="gallery-item-5"></li>
-        </ul>
+        <div class="swiper mySwiper">
+            <div class="events-gallery swiper-wrapper">
+                <div class="swiper-slide events-gallery-item" id="gallery-item-1">
+                    <div class="gallery-item-image"><img src="./assets/carousel-images/logique 1.jpeg" alt="logique"></div>
+                    <div class="gallery-item-title"><p>Logique '22</p></div>
+                    <div class="gallery-item-tagline">Celebrate the philosophy of logic through math, tech vis-à-vis juxta!
+                        Third time's a charm, we shall prove thee!</div>
+                </div>
+                <div class="swiper-slide events-gallery-item" id="gallery-item-2">slide 2</li>
+            </div>
+        </div>
+
+        <!-- <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div> -->
     </section>
     
     <section class="about-us" id="about-us-dark">

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -28,7 +28,7 @@ section {
 .dark,
 .calendar {
     scale: 0.8;
-    grid-row: 4;
+    grid-row: 3;
     margin-top: 30%;
     margin-left: -15%;
     transition: ease-in-out 0.15s;
@@ -56,17 +56,28 @@ section {
     text-align: center;
     font-size: 12vh;
     grid-column: 4/9;
-    grid-row: 5/6;
+    grid-row: 4/6;
 }
 
 #school-name {
+    color: #232323;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 5vh;
     grid-column: 5/8;
     text-align: center;
-    grid-row: 7/8;
+    grid-row: 6/8;
     margin-top: -8%;
+}
+
+#club-tagline {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 7vh;
+    grid-column: 5/8;
+    text-align: center;
+    grid-row: 6/8;
+    margin-top: 1.5rem;
 }
 
 .core:hover,
@@ -160,39 +171,6 @@ section {
     text-align: center;
 }
 
-.events-gallery-item {
-    padding: 2rem;
-    background: #EFEFEF;
-    border-radius: 46px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.gallery-item-image {
-    padding-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.gallery-item-image img {
-    width: 22vw;
-    border-radius: 10px;
-}
-
-.gallery-item-title {
-    color: #0E0E0E;
-    font-size: 1.3em;
-    text-align: center;
-}
-
-.gallery-item-tagline {
-    color: #3E3E3E;
-    text-align: center;
-}
-
 .cc-people {
     display: flex;
     align-items: center;
@@ -206,41 +184,39 @@ section {
 
 }
 
-.cc-people-line1 div{
+.cc-people-line1 div {
     width: 15vh;
     height: 18vh;
     border-radius: 2vh;
     background: #868686;
 }
 
-/* our events carousel */
-
-.events-gallery {
-	padding: 1rem;
-	display: grid;
-	grid-template-columns: repeat(10, 40vw);
-	grid-template-rows: 1fr;
-	grid-column-gap: 20vw;
-	grid-row-gap: 1rem;
-	overflow: scroll;
-	height: 50vh;
-	scroll-snap-type: both mandatory;
-	scroll-padding: 1rem;
+#event-page {
+    height: 100vh;
 }
 
-.active {
-	scroll-snap-type: unset;
+.swiper {
+    width: 60%;
+    height: 60%;
 }
 
-li {
-	scroll-snap-align: center;
-	list-style: none;
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.events-gallery::-webkit-scrollbar {
-    display: none;
+.swiper-slide img {
+    display: block;
+    height: 30vh;
+    object-fit: cover;
 }
-.events-gallery {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
 }
