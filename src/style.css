@@ -161,6 +161,7 @@ section {
 }
 
 .events-gallery-item {
+    padding: 2rem;
     background: #EFEFEF;
     border-radius: 46px;
     display: flex;
@@ -170,6 +171,7 @@ section {
 }
 
 .gallery-item-image {
+    padding-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
