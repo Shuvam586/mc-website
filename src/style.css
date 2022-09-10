@@ -6,8 +6,30 @@
     padding: 0;
 }
 
+/*For variable colors (Just for the SVGs)*/
+html[data-theme='dark'] {
+    --color1: rgb(255, 255, 255);
+}
+
+html[data-theme='dark'] {
+    --color1: rgb(255, 255, 255);
+}
+
+.path {
+    fill: var(--color1);
+}
+
+/*Main CSS starts here*/
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(0, 0, 0); */
+    overflow-y: scroll;
     overflow-x: hidden;
 }
 
@@ -89,23 +111,23 @@ section {
 }
 
 .events-page {
-    background-color: #CACACA;
+    background: transparent;
 }
 
 .about-us {
-    background-color: #9A9A9A;
+    background: transparent;
 }
 
 .core-committee {
-    background-color: #545454;
+    background: transparent;
 }
 
 .content-team {
-    background-color: #202020;
+    background: transparent;
 }
 
 .footer {
-    background-color: #0E0E0E;
+    background: transparent;
     height: 30vh;
 }
 

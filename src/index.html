@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -20,27 +20,34 @@
 </head>
 
 <body>
-    <section class="intro" id="main-page">
-        <svg id="events" class="calendar" onclick="pagescroll('events')" width="28" height="31" viewBox="0 0 28 31">
-            <path
-                d="M9.6875 1.9375V3.875H17.4375V1.9375C17.4375 0.867637 18.3033 0 19.375 0C20.4467 0 21.3125 0.867637 21.3125 1.9375V3.875H24.2188C25.8232 3.875 27.125 5.17615 27.125 6.78125V9.6875H0V6.78125C0 5.17615 1.30115 3.875 2.90625 3.875H5.8125V1.9375C5.8125 0.867637 6.67832 0 7.75 0C8.82168 0 9.6875 0.867637 9.6875 1.9375ZM0 11.625H27.125V28.0938C27.125 29.6982 25.8232 31 24.2188 31H2.90625C1.30115 31 0 29.6982 0 28.0938V11.625ZM4.84375 15.5C4.30852 15.5 3.875 15.9359 3.875 16.4688V22.2812C3.875 22.8141 4.30852 23.25 4.84375 23.25H10.6562C11.1891 23.25 11.625 22.8141 11.625 22.2812V16.4688C11.625 15.9359 11.1891 15.5 10.6562 15.5H4.84375Z"
-                fill="#232323" />
-        </svg>
-        <svg class="dark" id="about-us" onclick="pagescroll('dark')" width="26" height="29" viewBox="0 0 26 29">
-            <path
-                d="M0.0625 14.5C0.0625 6.5207 6.52715 0.0625 14.4871 0.0625C15.2193 0.0625 16.4014 0.170008 17.1232 0.303941C17.743 0.418474 17.8806 1.24689 17.3346 1.55691C13.791 3.5752 11.6125 7.31992 11.6125 11.3934C11.6125 18.4639 18.0391 23.8328 25.0381 22.4986C25.6543 22.3823 26.0874 23.0996 25.6897 23.5911C23.0014 26.9137 18.9344 28.9375 14.4871 28.9375C6.51426 28.9375 0.0625 22.4664 0.0625 14.5Z"
-                fill="#232323" />
-        </svg>
-        <svg class="content" id="content-team" onclick="pagescroll('content')" width="34" height="31" viewBox="0 0 34 31">
-            <path
-                d="M12.5625 15.942C12.5746 14.1256 13.4344 12.4242 14.8875 11.3344L29.2189 0.581553C30.3451 -0.26356 31.9133 -0.179521 32.9486 0.781055C33.9779 1.74133 34.1656 3.30223 33.4027 4.48471L23.6123 19.6232C22.692 21.0521 21.1965 21.9906 19.5436 22.2268L12.5625 15.942ZM18.375 24.2188C18.375 27.9666 15.3416 31 11.5938 31H2.875C1.80514 31 0.9375 30.1342 0.9375 29.0625C0.9375 27.9908 1.80514 27.125 2.875 27.125H3.16623C4.23367 27.125 4.95781 25.9807 4.84822 24.9211C4.82461 24.691 4.8125 24.4549 4.8125 24.2188C4.8125 20.5617 7.7127 17.5768 11.3334 17.4436L18.3629 23.7646C18.3689 23.8615 18.375 24.0674 18.375 24.2188Z"
-                fill="#232323" />
-        </svg>
-        <svg class="core" id="core-committee" onclick="pagescroll('core')" width="41" height="33" viewBox="0 0 41 33">
-            <path
-                d="M14.35 16.5C18.8792 16.5 22.55 12.8062 22.55 8.25C22.55 3.69381 18.8792 0 14.35 0C9.82078 0 6.15 3.69381 6.15 8.25C6.15 12.8062 9.82078 16.5 14.35 16.5ZM17.598 19.5938H11.102C4.96933 19.5938 0 24.5953 0 30.7635C0 32.001 0.99425 33 2.22041 33H26.477C27.707 33 28.7 32.001 28.7 30.7635C28.7 24.5953 23.7288 19.5938 17.598 19.5938ZM30.6923 20.625H25.9613C28.905 23.0549 30.75 26.69 30.75 30.7635C30.75 31.5885 30.5066 32.349 30.1094 33H38.95C40.0839 33 41 32.0719 41 30.8795C41 25.2398 36.4131 20.625 30.6923 20.625ZM27.675 16.5C31.6405 16.5 34.85 13.2709 34.85 9.28125C34.85 5.2916 31.6405 2.0625 27.675 2.0625C26.0664 2.0625 24.5974 2.6139 23.4007 3.51334C24.1388 4.93904 24.6 6.53555 24.6 8.25C24.6 10.5394 23.8357 12.6418 22.5763 14.3544C23.8761 15.675 25.6762 16.5 27.675 16.5Z"
-                fill="#232323" />
-        </svg>
+    <div id="container">
+        <section class="intro" id="main-page">
+            <svg id="events" class="calendar" onclick="pagescroll('events')" width="28" height="31" viewBox="0 0 28 31">
+                <path
+                    class="path"
+                    d="M9.6875 1.9375V3.875H17.4375V1.9375C17.4375 0.867637 18.3033 0 19.375 0C20.4467 0 21.3125 0.867637 21.3125 1.9375V3.875H24.2188C25.8232 3.875 27.125 5.17615 27.125 6.78125V9.6875H0V6.78125C0 5.17615 1.30115 3.875 2.90625 3.875H5.8125V1.9375C5.8125 0.867637 6.67832 0 7.75 0C8.82168 0 9.6875 0.867637 9.6875 1.9375ZM0 11.625H27.125V28.0938C27.125 29.6982 25.8232 31 24.2188 31H2.90625C1.30115 31 0 29.6982 0 28.0938V11.625ZM4.84375 15.5C4.30852 15.5 3.875 15.9359 3.875 16.4688V22.2812C3.875 22.8141 4.30852 23.25 4.84375 23.25H10.6562C11.1891 23.25 11.625 22.8141 11.625 22.2812V16.4688C11.625 15.9359 11.1891 15.5 10.6562 15.5H4.84375Z"
+                    fill="#232323" />
+            </svg>
+            <svg class="dark" id="about-us" onclick="pagescroll('dark')" width="26" height="29" viewBox="0 0 26 29">
+                <path
+                    class="path"
+                    d="M0.0625 14.5C0.0625 6.5207 6.52715 0.0625 14.4871 0.0625C15.2193 0.0625 16.4014 0.170008 17.1232 0.303941C17.743 0.418474 17.8806 1.24689 17.3346 1.55691C13.791 3.5752 11.6125 7.31992 11.6125 11.3934C11.6125 18.4639 18.0391 23.8328 25.0381 22.4986C25.6543 22.3823 26.0874 23.0996 25.6897 23.5911C23.0014 26.9137 18.9344 28.9375 14.4871 28.9375C6.51426 28.9375 0.0625 22.4664 0.0625 14.5Z"
+                    fill="#232323" />
+            </svg>
+            <svg class="content" id="content-team" onclick="pagescroll('content')" width="34" height="31"
+                viewBox="0 0 34 31">
+                <path
+                    class="path"
+                    d="M12.5625 15.942C12.5746 14.1256 13.4344 12.4242 14.8875 11.3344L29.2189 0.581553C30.3451 -0.26356 31.9133 -0.179521 32.9486 0.781055C33.9779 1.74133 34.1656 3.30223 33.4027 4.48471L23.6123 19.6232C22.692 21.0521 21.1965 21.9906 19.5436 22.2268L12.5625 15.942ZM18.375 24.2188C18.375 27.9666 15.3416 31 11.5938 31H2.875C1.80514 31 0.9375 30.1342 0.9375 29.0625C0.9375 27.9908 1.80514 27.125 2.875 27.125H3.16623C4.23367 27.125 4.95781 25.9807 4.84822 24.9211C4.82461 24.691 4.8125 24.4549 4.8125 24.2188C4.8125 20.5617 7.7127 17.5768 11.3334 17.4436L18.3629 23.7646C18.3689 23.8615 18.375 24.0674 18.375 24.2188Z"
+                    fill="#232323" />
+            </svg>
+            <svg class="core" id="core-committee" onclick="pagescroll('core')" width="41" height="33"
+                viewBox="0 0 41 33">
+                <path
+                    class="path"
+                    d="M14.35 16.5C18.8792 16.5 22.55 12.8062 22.55 8.25C22.55 3.69381 18.8792 0 14.35 0C9.82078 0 6.15 3.69381 6.15 8.25C6.15 12.8062 9.82078 16.5 14.35 16.5ZM17.598 19.5938H11.102C4.96933 19.5938 0 24.5953 0 30.7635C0 32.001 0.99425 33 2.22041 33H26.477C27.707 33 28.7 32.001 28.7 30.7635C28.7 24.5953 23.7288 19.5938 17.598 19.5938ZM30.6923 20.625H25.9613C28.905 23.0549 30.75 26.69 30.75 30.7635C30.75 31.5885 30.5066 32.349 30.1094 33H38.95C40.0839 33 41 32.0719 41 30.8795C41 25.2398 36.4131 20.625 30.6923 20.625ZM27.675 16.5C31.6405 16.5 34.85 13.2709 34.85 9.28125C34.85 5.2916 31.6405 2.0625 27.675 2.0625C26.0664 2.0625 24.5974 2.6139 23.4007 3.51334C24.1388 4.93904 24.6 6.53555 24.6 8.25C24.6 10.5394 23.8357 12.6418 22.5763 14.3544C23.8761 15.675 25.6762 16.5 27.675 16.5Z"
+                    fill="#232323" />
+            </svg>
 
         <span id="club-title">Maths Club</span>
         <p id="school-name">DPSRPK</p>
@@ -94,37 +101,57 @@
     <!-- @pritish -->
     <!-- ei section ta i havent completed -->
 
-    <section class="core-committee" id="core-page">
-        <div id="core-committee-heading">
-            <p id="core-committee-title">Core Committee</p>
-            <p id="core-committee-tagline">the people who make it work</p>
-        </div>
-        <div class="cc-people">
-            <div class="cc-people-line1">
-                <div class="prez"></div>
-                <div class="vice-prez"></div>
+        <section class="about-us" id="about-us-dark">
+            <div id="about-us-heading">
+                <p id="about-us-title">About Us</p>
+                <p id="about-us-tagline">get to know the club better</p>
             </div>
-            <div class="cc-people-line2">
-                <div class="sec"></div>
-                <div class="a-sec"></div>
-                <div class="convenor"></div>
-            </div>
-            <div class="cc-people-line3">
-                <div class="exec1"></div>
-                <div class="exec2"></div>
-                <div class="exec3"></div>
-                <div class="exec4"></div>
-            </div>
-        </div>
-    </section>
+            <p id="about-us-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum ipsum
+                justo, eu efficitur dui aliquam vel. Sed convallis massa turpis. Mauris a nibh enim. Nulla vel neque
+                quis felis tincidunt pulvinar id ut ligula. Duis facilisis convallis odio in aliquet. Curabitur lacinia
+                mattis leo, nec ultricies felis. Nullam scelerisque cursus tortor, nec viverra libero pharetra vitae.
+                Cras tristique nisi vitae feugiat ultrices. Vestibulum elit massa, dapibus sed pretium fringilla,
+                efficitur eu enim. Curabitur malesuada volutpat tellus non placerat. Maecenas urna leo, condimentum ac
+                porta ac, feugiat a orci. Donec dictum massa in neque iaculis pulvinar. In efficitur lorem sed massa
+                hendrerit, eget laoreet mi dictum.</p>
+        </section>
 
-    <section class="content-team" id="content-team-page">
-        Content Team
-    </section>
 
-    <section class="footer" id="footer">
-        Footer
-    </section>
+        <!-- @pritish -->
+        <!-- ei section ta i havent completed -->
+
+        <section class="core-committee" id="core-page">
+            <div id="core-committee-heading">
+                <p id="core-committee-title">Core Committee</p>
+                <p id="core-committee-tagline">the people who make it work</p>
+            </div>
+            <div class="cc-people">
+                <div class="cc-people-line1">
+                    <div class="prez"></div>
+                    <div class="vice-prez"></div>
+                </div>
+                <div class="cc-people-line2">
+                    <div class="sec"></div>
+                    <div class="a-sec"></div>
+                    <div class="convenor"></div>
+                </div>
+                <div class="cc-people-line3">
+                    <div class="exec1"></div>
+                    <div class="exec2"></div>
+                    <div class="exec3"></div>
+                    <div class="exec4"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-team" id="content-team-page">
+            Content Team
+        </section>
+
+        <section class="footer" id="footer">
+            Footer
+        </section>
+    </div>
 </body>
 
 </html>
