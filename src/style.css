@@ -30,6 +30,11 @@ html[data-theme='dark'] {
     scrollbar-width: none;
 }
 
+/* smooth scrolling */
+#container {
+    scroll-behavior: smooth;
+}
+
 /*Main CSS starts here*/
 body {
     font-family: 'Poppins', sans-serif;

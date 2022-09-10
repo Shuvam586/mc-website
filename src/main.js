@@ -1,5 +1,4 @@
 // typing ghapla 
-
 ityped.init('#club-tagline', {
     strings:['Learn.', 'Lark.', 'Luminate.'],
     startDelay: 500,
@@ -93,4 +92,9 @@ function switchTheme() {
         document.getElementById('container').style.backgroundColor = 'rgb(0, 0, 0)';
         document.getElementById('container').style.color = 'rgb(255, 255, 255)';
     }
+}
+
+// oporer buttons
+function eventsScroll(){
+    window.location.replace("#event-page");
 }
