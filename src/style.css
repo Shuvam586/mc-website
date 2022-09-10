@@ -21,6 +21,15 @@ html[data-theme='dark'] {
     fill: var(--color1);
 }
 
+/* disabling scrollbar */
+*::-webkit-scrollbar {
+    display: none;
+}
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 /*Main CSS starts here*/
 body {
     font-family: 'Poppins', sans-serif;
@@ -38,6 +47,15 @@ body {
 section {
     height: 100vh;
     width: 100vw;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .intro {
@@ -84,7 +102,7 @@ section {
 }
 
 #school-name {
-    color: #232323;
+    /* color: #232323; */
     font-style: normal;
     font-weight: 600;
     font-size: 5vh;
@@ -147,7 +165,7 @@ section {
 }
 
 #about-us-tagline {
-    color: #232323;
+    /* color: #232323; */
     font-size: 2.5vh;
     font-weight: 700;
     text-align: center;
@@ -165,11 +183,11 @@ section {
     font-weight: 700;
     text-align: center;
     margin-bottom: 10px;
-    color: #E8E8E8;
+    /* color: #E8E8E8; */
 }
 
 #core-committee-tagline {
-    color: #D8D3D3;
+    /* color: #D8D3D3; */
     font-size: 2.5vh;
     font-weight: 700;
     text-align: center;
@@ -189,7 +207,7 @@ section {
 }
 
 #events-tagline {
-    color: #232323;
+    /* color: #232323; */
     font-size: 2.5vh;
     font-weight: 700;
     text-align: center;
@@ -220,12 +238,13 @@ section {
 }
 
 .swiper {
-    width: 60%;
+    width: 100%;
     height: 60%;
 }
 
 .swiper-slide {
     text-align: center;
+    padding: 1rem;
     background: #fff;
     border-radius: 2rem;
     display: flex;
@@ -235,12 +254,24 @@ section {
 }
 
 .swiper-slide img {
+    border-radius: 1rem;
     display: block;
-    height: 30vh;
+    height: 40vh;
     object-fit: cover;
 }
 
 .swiper {
     margin-left: auto;
     margin-right: auto;
+}
+
+.gallery-item-title {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.gallery-item-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

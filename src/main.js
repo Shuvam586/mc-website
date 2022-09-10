@@ -10,19 +10,31 @@ ityped.init('#club-tagline', {
 
 
 // carousel ghapla
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 60,
-    autoplay: 1000,
+var swiper = new Swiper(".swiper", {
+    speed: 400,
+    spaceBetween: 100,
+    initialSlide: 0,
+    
+    autoHeight: false,
+    
+    direction: 'horizontal',
     loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    }
+    
+    autoplay: 5000,
+    autoplayStopOnLast: false, 
+    
+    pagination: '.swiper-pagination',
+    paginationType: "bullets",
+    
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    effect: 'slide',
+    
+    spaceBetween: 60,
+    slidesPerView: 2,
+    centeredSlides: true,
+    slidesOffsetBefore: 0,
+    grabCursor: true,
 });
 
 
@@ -31,17 +43,17 @@ function setColor() {
     theme = document.documentElement.getAttribute('data-theme');
     
     if(theme == 'dark') {
-        document.getElementById('container').style.backgroundColor = 'rgb(0, 0, 0)';
+        document.getElementById('container').style.backgroundColor = 'rgb(33, 33, 33)';
         document.getElementById('container').style.color = 'rgb(255, 255, 255)';
     } else {
         document.getElementById('container').style.backgroundColor = 'rgb(255, 255, 255)';
-        document.getElementById('container').style.color = 'rgb(0, 0, 0)';
+        document.getElementById('container').style.color = 'rgb(33, 33, 33)';
     }
 }
 
 setColor();
 
-document.getElementById('container').addEventListener('scroll', function (){
+document.querySelector('#container').addEventListener('scroll', function (){
     theme = document.documentElement.getAttribute('data-theme');
 
     if (theme == 'dark') {
