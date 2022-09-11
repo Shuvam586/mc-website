@@ -78,19 +78,46 @@ document.querySelector('#container').addEventListener('scroll', function (){
 });
 
 //Code for dark mode :-
+function transitionTheme(color) {
+    elem = document.getElementById('container');
+    if (color == 'black') {
+        bg = 255;
+        fg = 0;
+
+        loop = setInterval(function() {
+            elem.style.backgroundColor = 'rgb(' + bg + ', ' + bg + ', ' + bg + ')';
+            elem.style.color = 'rgb(' + fg + ', ' + fg + ', ' + fg + ')';
+            bg -= 15;
+            fg += 15;
+            if (bg == 0) {
+                clearInterval(loop);
+            }
+        }, 1);
+    } else if (color == 'white') {
+        bg = 0;
+        fg = 255;
+
+        loop = setInterval(function() {
+            elem.style.backgroundColor = 'rgb(' + bg + ', ' + bg + ', ' + bg + ')';
+            elem.style.color = 'rgb(' + fg + ', ' + fg + ', ' + fg + ')';
+            bg += 15;
+            fg -= 15;
+            if (bg == 255) {
+                clearInterval(loop);
+            }
+        }, 1);
+    }
+}
+
 function switchTheme() {
     val = document.documentElement.getAttribute('data-theme');
 
     if (val == 'dark') {
         document.documentElement.setAttribute('data-theme', 'light');
-        
-        document.getElementById('container').style.backgroundColor = 'rgb(255, 255, 255)';
-        document.getElementById('container').style.color = 'rgb(0, 0, 0)';
+        transitionTheme('white');
     } else {
         document.documentElement.setAttribute('data-theme', 'dark');
-        
-        document.getElementById('container').style.backgroundColor = 'rgb(0, 0, 0)';
-        document.getElementById('container').style.color = 'rgb(255, 255, 255)';
+        transitionTheme('black');
     }
 }
 
