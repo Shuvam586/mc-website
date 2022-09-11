@@ -19,14 +19,11 @@ var swiper = new Swiper(".swiper", {
     direction: 'horizontal',
     loop: true,
     
-    autoplay: 5000,
+    autoplay: {
+        delay: 5000,
+    },
     autoplayStopOnLast: false, 
     
-    pagination: '.swiper-pagination',
-    paginationType: "bullets",
-    
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
     effect: 'slide',
     
     spaceBetween: 60,
