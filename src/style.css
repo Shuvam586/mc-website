@@ -106,6 +106,7 @@ a:hover {
 
 .dark {
     grid-column: 6;
+    cursor: pointer;
 }
 
 .content {
