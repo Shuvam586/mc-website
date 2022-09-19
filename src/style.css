@@ -49,6 +49,24 @@ html[data-theme='light'] {
     scrollbar-width: none;
 }
 
+/* text selection colors */
+.top-section *::-moz-selection { /* Code for Firefox */
+    color: rgba(255, 255, 255, 1);
+    background: rgba(126, 126, 126, 0.5);
+}
+.top-section *::selection {
+    color: rgba(255, 255, 255, 1);
+    background: rgba(126, 126, 126, 0.5);
+}
+.bottom-section *::-moz-selection { /* Code for Firefox */
+    color: rgba(0, 0, 0, 1);
+    background: rgba(126, 126, 126, 0.5);
+}
+.bottom-section *::selection {
+    color: rgba(0, 0, 0, 1);
+    background: rgba(126, 126, 126, 0.5);
+}
+
 /* smooth scrolling */
 #container {
     scroll-behavior: smooth;
@@ -336,7 +354,7 @@ a:hover {
 
 #content-content img {
     border-radius: 2rem;
-    width: 60vw;
+    height: 70vh;
 }
 
 /* footer */
