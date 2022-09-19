@@ -185,6 +185,10 @@ a:hover {
 
 .core-committee {
     background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .content-team {
@@ -266,18 +270,45 @@ a:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-evenly;
+    height: 70vh;
 }
 
 .cc-people-line1 {
-    width: 60vw;
+    width: 45vw;
     display: flex;
     justify-content: space-evenly;
-
 }
 
 .cc-people-line1 div {
-    width: 15vh;
-    height: 18vh;
+    width: 120px;
+    height: 140px;
+    border-radius: 2vh;
+    background: #868686;
+}
+
+.cc-people-line2 {
+    width: 45vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cc-people-line2 div {
+    width: 95px;
+    height: 112px;
+    border-radius: 2vh;
+    background: #868686;
+}
+
+.cc-people-line3 {
+    width: 45vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cc-people-line3 div {
+    width: 75px;
+    height: 88px;
     border-radius: 2vh;
     background: #868686;
 }
