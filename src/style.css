@@ -320,6 +320,8 @@ a:hover {
 
 .overlay {
     position: absolute;
+    width: inherit;
+    height: inherit;
     background-color: rgba(255, 128, 149, 0.4);
     opacity: 0;
     transition: opacity 250ms;
