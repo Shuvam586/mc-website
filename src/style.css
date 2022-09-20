@@ -284,7 +284,6 @@ a:hover {
     width: 120px;
     height: 140px;
     border-radius: 2vh;
-    background: #868686;
 }
 
 .cc-people-line2 {
@@ -297,7 +296,6 @@ a:hover {
     width: 95px;
     height: 112px;
     border-radius: 2vh;
-    background: #868686;
 }
 
 .cc-people-line3 {
@@ -310,7 +308,27 @@ a:hover {
     width: 75px;
     height: 88px;
     border-radius: 2vh;
-    background: #868686;
+}
+
+.img-cc {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 2vh;
+}
+
+.overlay {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(255, 128, 149, 0.4);
+    opacity: 0;
+    transition: opacity 250ms;
+}
+
+.overlay:hover {
+    opacity: 1;
 }
 
 #event-page {

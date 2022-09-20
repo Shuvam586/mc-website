@@ -89,7 +89,7 @@ function transitionTheme(color) {
             if (bg == 0) {
                 clearInterval(loop);
             }
-        }, 1);
+        }, 5);
     } else if (color == 'white') {
         bg = 0;
         fg = 255;
@@ -102,7 +102,7 @@ function transitionTheme(color) {
             if (bg == 255) {
                 clearInterval(loop);
             }
-        }, 1);
+        }, 5);
     }
 }
 
