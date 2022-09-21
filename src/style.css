@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800;900&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Sora', sans-serif; */
 
 }
 
@@ -74,7 +74,7 @@ html[data-theme='light'] {
 
 /*Main CSS starts here*/
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Sora', sans-serif;
 }
 
 #container {
@@ -136,11 +136,11 @@ a:hover {
 }
 
 #club-title {
-    color: var(--color3);
+    color: var(--color4);
     font-style: normal;
-    font-weight: 1000;
+    font-weight: 700;
     text-align: center;
-    font-size: 5.2em;
+    font-size: 5.4em;
     grid-column: 2/11;
     grid-row: 4/6;
 }
@@ -148,8 +148,8 @@ a:hover {
 #school-name {
     color: var(--color4);
     font-style: normal;
-    font-weight: 600;
-    font-size: 5vh;
+    font-weight: 700;
+    font-size: 2em;
     grid-column: 5/8;
     text-align: center;
     grid-row: 6/8;
@@ -159,7 +159,7 @@ a:hover {
 #club-tagline {
     color: var(--color4);
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 7vh;
     grid-column: 5/8;
     text-align: center;
@@ -209,7 +209,7 @@ a:hover {
 #about-us-title {
     color: var(--color3);
     font-size: 7vh;
-    font-weight: 700;
+    font-weight: 800;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -225,6 +225,7 @@ a:hover {
     color: var(--color3);
     font-weight: 700;
     width: 40vw;
+    font-size: 1.2em;
     text-align: center;
     margin-inline: auto;
     margin-top: 4rem;
@@ -233,7 +234,7 @@ a:hover {
 #core-committee-title {
     color: var(--color5);
     font-size: 7vh;
-    font-weight: 700;
+    font-weight: 800;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -254,7 +255,7 @@ a:hover {
 #events-title {
     color: var(--color3);
     font-size: 7vh;
-    font-weight: 700;
+    font-weight: 800;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -366,6 +367,11 @@ a:hover {
 .gallery-item-title {
     font-size: 1.6em;
     font-weight: 700;
+    color: rgb(49, 49, 49);
+}
+
+.gallery-item-tagline {
+    color: rgb(49, 49, 49);
 }
 
 .gallery-item-image {
@@ -383,7 +389,7 @@ a:hover {
 #content-title {
     color: var(--color5);
     font-size: 7vh;
-    font-weight: 700;
+    font-weight: 800;
     text-align: center;
     margin-bottom: 10px;
 }
