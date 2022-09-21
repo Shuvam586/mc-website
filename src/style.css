@@ -405,9 +405,13 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: calc(70vh * (609.55 / 457.8));
+    height: 70vh;
+    margin-inline: auto;
 }
 
 #content-content img {
+    position: absolute;
     border-radius: 2rem;
     height: 70vh;
 }
