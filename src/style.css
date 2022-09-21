@@ -332,10 +332,18 @@ a:hover {
     background-color: var(--color7);
     opacity: 0;
     transition: opacity 250ms;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .overlay:hover {
     opacity: 1;
+}
+
+.overlay p {
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
 #event-page {

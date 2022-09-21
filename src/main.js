@@ -122,3 +122,8 @@ function switchTheme() {
 function eventsScroll(){
     window.location.replace("#event-page");
 }
+
+// easter egg 1
+function whoKnowsWhatThisIs() {
+    window.location.replace("./eggs/thisisavoid.html");
+}

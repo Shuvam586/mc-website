@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Void</title>
+
+    <script src="https://unpkg.com/ityped@1.0.3/dist/index.min.js"></script>
+
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+
+    body {
+        color: white;
+        background: rgb(17, 17, 20);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .text {
+        font-size: 3rem;
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="text" id="void-box"></div>
+
+    <script>
+        ityped.init('#void-box', {
+            strings: ['Learn.', 'Lark.', 'Luminate.'],
+            startDelay: 700,
+            loop: true,
+            typeSpeed: 10,
+            cursorChar: ""
+        });
+    </script>
+</body>
+
+</html>
