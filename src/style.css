@@ -20,6 +20,9 @@ html[data-theme='dark'] {
     /* second half */
     --color5: rgb(0, 0, 0);
     --color6: rgb(35, 35, 35);
+
+    /* rossum effect */
+    --color7: rgba(233, 233, 233, 0.4);
 }
 
 html[data-theme='light'] {
@@ -33,6 +36,9 @@ html[data-theme='light'] {
     /* second half */
     --color5: rgb(255, 255, 255);
     --color6: rgb(236, 236, 236);
+
+    /* rossum effect */
+    --color7: rgba(34, 34, 34, 0.4);
 }
 
 
@@ -323,7 +329,7 @@ a:hover {
     position: absolute;
     width: inherit;
     height: inherit;
-    background-color: rgba(255, 128, 149, 0.4);
+    background-color: var(--color7);
     opacity: 0;
     transition: opacity 250ms;
 }
