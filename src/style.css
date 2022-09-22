@@ -417,8 +417,8 @@ a:hover {
 
 #content-content {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     width: calc(70vh * (609.55 / 457.8));
     height: 70vh;
     margin-inline: auto;
@@ -436,10 +436,6 @@ a:hover {
     padding-inline: 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-.footer-logo img {
-    height: 20vh;
 }
 
 .footer-left {
@@ -571,5 +567,28 @@ a:hover {
 
     .gallery-item-tagline {
         font-size: 1.2em;
+    }
+    #about-us-content {
+        width: 70vw;
+        font-size: 1.4em;
+    }
+    #content-content {
+        height: 40vh;
+        margin-inline: auto;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #content-content img {
+        height: 40vh;
+        width: auto;
+    }
+    .overlay {
+        height: 40vh;
+        width: calc((1442/1083)*40vh);
+    }
+    .footer {
+        margin-bottom: 0;
     }
 }
